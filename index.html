@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triple Pendulum Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section class="controls">
+      <h1>Triple Pendulum Simulator</h1>
+      <p>Adjust parameters and press reset to start from your initial conditions.</p>
+      <div id="control-grid"></div>
+      <div class="buttons">
+        <button id="toggle">Pause</button>
+        <button id="reset">Reset</button>
+        <button id="clear-trace">Clear Trace</button>
+      </div>
+    </section>
+    <section class="canvas-wrap">
+      <canvas id="sim" width="900" height="700"></canvas>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
