@@ -208,9 +208,10 @@ function draw() {
   const points = joints(state.theta, lengths);
 
   const maxLen = lengths[0] + lengths[1] + lengths[2];
-  const scale = (Math.min(canvas.width, canvas.height) * 0.42) / maxLen;
+  const padding = 40;
+  const scale = Math.max(1, (Math.min(canvas.width, canvas.height) - 2 * padding) / (2 * maxLen));
   const ox = canvas.width / 2;
-  const oy = canvas.height * 0.16;
+  const oy = canvas.height / 2;
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
