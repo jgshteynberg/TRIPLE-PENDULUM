@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, #101521 0%, #1c2537 100%);
+  color: #f2f5ff;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button {
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #607298;
+}
+
+button {
+  cursor: pointer;
+  background: #2f4c87;
+  color: #fff;
+}
+
+button:hover {
+  background: #3960a8;
+}
+
+.hint {
+  margin: 0 0 0.75rem;
+  color: #ccd8f0;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  background: #0b101b;
+  border: 1px solid #3e4f73;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
